@@ -6,7 +6,9 @@
 
 If you don't have Ruby installed on your computer, run `brew install ruby` on Terminal. 
 
-Next, you'll need to update your Ruby file path to the version you just installed. (To check what version, run `ruby -v`). Update by changing the **X.X** to the version number: `echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile`
+Next, you'll need to update your Ruby file path to the version you just installed. (To check what version, run `ruby -v`). Update by changing the **X.X** to the version number: 
+
+`echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile`
 
 ### Install Bundler
 
