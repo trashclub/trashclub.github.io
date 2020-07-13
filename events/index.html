@@ -25,48 +25,26 @@ layout: default
                     </p>
                 </div>
 
-                <!--WEEK 1-->
+                <!--WEEK 0-->
+
+                {% for event in site.events %}
+
                 <div class='week-reading'>
                     <!--DATE-->
                     <div>
-                        <h3 class='event-date'>March 6, 2020</h3>
+                        <h3 class='event-date'>{{ event.date | date: "%B %-d, %Y"}}</h3>
                         <!--READING 1-->
                         <div class = 'event-title'>
-                            Reading Club with Special Guest: Nabil Hassein
+                            {{ event.title }}
                         </div>
                         <!--READINGS-->
                         <div>
-                            <a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/"
-                                target="_blank">Reading 1</a>
-                            <br>
-                            <a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/"
-                            target="_blank">Reading 2</a>
-                            <br>
-                            <a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/"
-                            target="_blank">Reading 3</a>
+                            {{ event.content }}
                         </div>
                     </div>
                 </div>
 
-                <!--WEEK 2-->
-                <div class='week-reading'>
-                    <div>
-                        <div>
-                            <h3 class='event-date'>May 14 2020
-                            </h3>
-                        </div>
-                        <div class = 'event-title'>
-                            Sims Recycling Center Tour
-                        </div>
-
-                        <div>
-                            Zoom Link: https://us02web.zoom.us/j/81593181275?pwd=QWp0d3hsZUx3WTVHQ0lJN3grdW5Xdz09
-                            <br>
-                        </div>
-                    </div>
-
-                </div>
-
+                {% endfor %}
 
             </div>
         </div>

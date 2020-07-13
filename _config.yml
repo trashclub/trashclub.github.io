@@ -1,2 +1,7 @@
 name: Trash Club
 markdown: kramdown
+collections:
+  - events
+  - readings
+  - projects
+  - resources
