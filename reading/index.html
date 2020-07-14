@@ -24,65 +24,19 @@ layout: default
                 </div>
 
                 <!--WEEK 1-->
+
+                {% for reading in site.readings %}
+
                 <div class='week-reading'>
                     <!--DATE-->
                     <div>
-                        <h3 class='reading-date'>Feb 7 2020</h3>
+                        <h3 class='reading-date'>{{ reading.date | date: "%B %-d, %Y"}}</h3>
                         <!--READING 1-->
-                        <div>
-                            <a href="https://arena-attachments.s3.amazonaws.com/5839411/c5264084476bba44a6b02ac6a9592a41.pdf?1578335143"
-                                target="_blank">
-                                Waste is Information</a>
-                            <br>
-                            Dietmar Offenhuber. Introduction & TBD Chapter
-                            <br>
-                            <br>
-                        </div>
-                        <!--READING 2-->
-                        <div>
-                            <a href="http://www.jennyodell.com/bso.html" target="_blank">Waste is Art</a><br>
-                            Jenny Odell<br>
-                            <br>
-                        </div>
-                        <!--READING 3-->
-                        <div>
-                            <a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/"
-                                target="_blank">Waste is
-                                Not “Matter Out of Place”</a>
-                            <br>
-                            Max Liboiron<br>
-                        </div>
+                        {{ reading.content }}
                     </div>
                 </div>
 
-                <!--WEEK 2-->
-                <div class='week-reading'>
-                    <div>
-                        <div>
-                            <h3 class='reading-date'>Feb 14 2020
-                            </h3>
-                        </div>
-                        <div>
-                            The Great Lightbulb Conspiracy<br>
-                            Markus Krajewski<br>
-                            <br>
-                        </div>
-
-                        <div>
-                            Made to Break<br>
-                            Giles Spade. Chapter 1 + 9<br>
-                            <br>
-                        </div>
-
-                        <div>
-                            American Trash<br>
-                            Colin Lechert<br>
-                            <br>
-                        </div>
-                    </div>
-
-                </div>
-
-
+                {% endfor %}
+                
             </div>
         </div>
