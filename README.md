@@ -10,7 +10,7 @@ Next, you'll need to update your Ruby file path to the version you just installe
 
 `echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile`
 
-Helpful Resource: [Update Ruby to Latest Version] (https://codingpad.maryspad.com/2017/04/29/update-mac-os-x-to-the-current-version-of-ruby/)
+Helpful Resource: [Update Ruby to Latest Version](https://codingpad.maryspad.com/2017/04/29/update-mac-os-x-to-the-current-version-of-ruby/).
 
 ### Install Bundler
 
