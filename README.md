@@ -10,6 +10,8 @@ Next, you'll need to update your Ruby file path to the version you just installe
 
 `echo 'export PATH="$HOME/.gem/ruby/X.X.0/bin:$PATH"' >> ~/.bash_profile`
 
+Helpful Resource: [Update Ruby to Latest Version] (https://codingpad.maryspad.com/2017/04/29/update-mac-os-x-to-the-current-version-of-ruby/)
+
 ### Install Bundler
 
 Then, we want to install **Bundler**, which helps us manage our Ruby environment and work with gems like Jekyll. (If you're more familiar with Python, it seems to play a similar role as **conda**, which helps you manage environments as well as installed packages.) At this point, you should be able to run this: 
