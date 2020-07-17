@@ -32,15 +32,17 @@ h2 {
     font-weight: 400;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 700px and down) */
+
+@media only screen and (max-width: 700px) {
     h2 {
         font-size: 4.75em;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 700px and up) */
+
+@media only screen and (min-width: 700px) {
     h2 {
         font-size: 6.25em;
     }
@@ -53,15 +55,15 @@ h3 {
     font-weight: 400;
 }
 
-@media only screen and (max-width: 600px){
-    h3{
+@media only screen and (max-width: 700px) {
+    h3 {
         font-size: 1.7em;
     }
 }
 
-@media only screen and (min-width: 600px){
-    h3{
-        font-size:2em;
+@media only screen and (min-width: 700px) {
+    h3 {
+        font-size: 2em;
     }
 }
 
@@ -101,6 +103,29 @@ a:active {
     padding-left: 0;
     padding-bottom: 1%;
     border-bottom: 1px solid black;
+}
+
+#navbar-resources {
+    text-align: right;
+}
+
+/* Extra small devices (phones, 700px and down) */
+
+@media only screen and (max-width: 700px) {
+    #navbar-resources, #navbar-projects, #navbar-events, #navbar-reading, #navbar-people {
+        text-align: left;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 700px and up) */
+
+@media only screen and (min-width: 700px) {
+    #navbar-resources {
+        text-align: right;
+    }
+    #navbar-projects, #navbar-events, #navbar-reading, #navbar-people {
+        text-align: center;
+    }
 }
 
 /*//////////////////////////HOME PAGE//////////////////////*/
@@ -173,8 +198,19 @@ a:active {
 
 /*//////////////////////////EVENTS//////////////////////*/
 
+#event-div {
+    margin-top: 0.5vh;
+    padding: 0;
+}
+
 .body-events {
     background-color: #BB7A2A;
+}
+
+.week-event {
+    border-top: 1px solid black;
+    padding-top: 1vh;
+    margin-bottom: 5vh;
 }
 
 .event-date {
@@ -183,8 +219,12 @@ a:active {
 
 .event-title {
     margin-bottom: 5%;
-    /* font-weight: 600; */
 }
+
+#event-h2-div{
+    width: 100vw;
+}
+
 
 /*//////////////////////////PROJECTS//////////////////////*/
 
@@ -210,18 +250,20 @@ a:active {
     vertical-align: top;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 700px and down) */
+
+@media only screen and (max-width: 700px) {
     .project-img {
-        width: 96vw;
+        width: 94vw;
         float: left;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 700px and up) */
+
+@media only screen and (min-width: 700px) {
     .project-img {
-        width: 35vw;
+        width: 28vw;
         float: right;
         padding: 1%;
     }
@@ -229,6 +271,57 @@ a:active {
 
 .project-div-full {
     border-bottom: 1px solid black;
+}
+
+/*//////////////////////////PEOPLE//////////////////////*/
+
+.body-people {
+    background-color: #417EF6;
+}
+
+.people-div {
+    padding: 1% 0%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*PEOPLE BLOCK*/
+
+#people-title-div {
+    padding-bottom: 0.5vh;
+    border-bottom: 1px solid black;
+}
+
+.people-div-full {
+    border-bottom: 1px solid black;
+}
+
+.people-url-div {
+    padding: 2% 0%;
+}
+
+.people-img {
+    position: relative;
+    vertical-align: top;
+}
+
+/* Extra small devices (phones, 700px and down) */
+
+@media only screen and (max-width: 700px) {
+    .people-img {
+        width: 94vw;
+        float: left;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 700px and up) */
+
+@media only screen and (min-width: 700px) {
+    .people-img {
+        width: 28vw;
+        float: right;
+        padding: 1%;
+    }
 }
 
 /*//////////////////////////RESOURCES//////////////////////*/
