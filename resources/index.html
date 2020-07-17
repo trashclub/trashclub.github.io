@@ -1,32 +1,140 @@
----
-title: My page
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<body class='body-resources'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash Club Test 5:16</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!--adobe fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/lwy8jjd.css">
+
+</head>
+
+    <body class='body-resources'>
     <!--CONTAINER-->
     <div class="container">
 
         <!--NAVBAR-->
-        {% include navbar.html %}
+        <!--NAVBAR-->
+<div id='navbar' class='row justify-content-between'>
+    <div id='navbar-trashclub' class='navbar-link col-sm'>
+        <a href="/">Trash Club</a>
+    </div>
+
+    <div id='navbar-reading' class='navbar-link col-sm'>
+        <a href="/reading/">Readings</a>
+    </div>
+
+    <div id='navbar-events' class='navbar-link col-sm'>
+        <a href="/events/">Events</a>
+    </div>
+
+    <div id='navbar-projects' class='navbar-link col-sm'>
+        <a href="/projects/">Projects</a>
+    </div>
+
+    <div id='navbar-people' class='navbar-link col-sm'>
+        <a href="/people/">People</a>
+    </div>
+
+    <div id='navbar-resources' class='navbar-link col-sm'>
+        <a href="/resources/">Resources</a>
+    </div>
+
+</div>
 
         <!--RESOURCES-->
         <div id='resource-container' class='row justify-content-between'>
+
             <!--RESOURCES TITLE-->
-            <div id='resource-title-div' class='col col-md-12'>
-                <h2>Resources</h2>
+            <div id='resource-title-div' class='col col-md-7'>
+                <div class = 'resource-h2-div'>
+                    <h2>Resources</h2>
+                </div>
             </div>
+
+
+            <!--RESOURCES SECTION-->
+            <div class='resources-text-div col col-md-5'>
+                
+                <div id='resource-events-div' class='resource-div'>
+                    <h3>Events </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+                </div>
+                
+                <div id='resource-grant-div' class='resource-div'>
+                    <h3>Grants </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+                </div>
+                
+                <div id='resource-org-div' class='resource-div'>
+                    <h3>Organizations </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+
+                </div>
+                
+            </div>
+
         </div>
 
-        <div class='row justify-content-between'>
-            
-            {% for resource in site.resources %}
-                    <div id='{{ resource.div_id }}' class='resource-div'>
-                        <h3>{{ resource.title}} </h3>
-                        {{ resource.content }}
-                    </div>
-            {% endfor %}
-
-        </div>
- 
     </div>
+
+
+
+</body>
+</html>
