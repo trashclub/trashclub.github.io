@@ -32,14 +32,18 @@ layout: default
                 <div class='week-reading'>
                     <!--DATE-->
                     <div>
-                        <h3 class='event-date'>{{ event.date | date: "%B %-d, %Y"}}</h3>
-                        <!--READING 1-->
-                        <div class = 'event-title'>
+                        <!--EVENT DATE-->
+                        <div class='event-date'>{{ event.date | date: "%B %-d, %Y"}}</div>
+                        <!--EVENT TITLE-->
+                        <h3 class='event-title'>
                             {{ event.title }}
-                        </div>
+                        </h3>
                         <!--READINGS-->
-                        <div>
-                            {{ event.content }}
+                        <div class='event-readings-div'>
+                            Readings:
+                            <div>
+                                {{ event.content }}
+                            </div>
                         </div>
                     </div>
                 </div>
