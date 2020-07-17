@@ -1,14 +1,55 @@
----
-title: My page
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<body class="body-people">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trash Club Test 5:16</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!--adobe fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/lwy8jjd.css">
+
+</head>
+
+    <body class="body-people">
     <!--CONTAINER-->
     <div class="container">
 
         <!--NAVBAR-->
-        {% include navbar.html %}
+        <!--NAVBAR-->
+<div id='navbar' class='row justify-content-between'>
+    <div id='navbar-trashclub' class='navbar-link col-sm'>
+        <a href="/">Trash Club</a>
+    </div>
+
+    <div id='navbar-reading' class='navbar-link col-sm'>
+        <a href="/reading/">Readings</a>
+    </div>
+
+    <div id='navbar-events' class='navbar-link col-sm'>
+        <a href="/events/">Events</a>
+    </div>
+
+    <div id='navbar-projects' class='navbar-link col-sm'>
+        <a href="/projects/">Projects</a>
+    </div>
+
+    <div id='navbar-people' class='navbar-link col-sm'>
+        <a href="/people/">People</a>
+    </div>
+
+    <div id='navbar-resources' class='navbar-link col-sm'>
+        <a href="/resources/">Resources</a>
+    </div>
+
+</div>
 
         <!--PEOPLE-->
         <div id='people-container' class='row justify-content-between'>
@@ -39,7 +80,7 @@ layout: default
                 </div>
 
                 <div class='people-div col col-md-5'>
-                    <img src="/photos/rashida_1.png" alt="placeholder" class='people-img'>
+                    <img src="/photos/rashida_jk.png" alt="placeholder" class='people-img'>
                 </div>
             </div>
 
@@ -63,7 +104,7 @@ layout: default
                 </div>
 
                 <div class='people-div col col-md-5'>
-                    <img src="/photos/morgan_1.png" alt="placeholder" class='people-img'>
+                    <img src="/photos/morgan_jk.png" alt="placeholder" class='people-img'>
                 </div>
             </div>
 
@@ -87,7 +128,7 @@ layout: default
                 </div>
 
                 <div class='people-div col col-md-5'>
-                    <img src="/photos/emily_1.png" alt="placeholder" class='people-img'>
+                    <img src="/photos/emily_jk.png" alt="placeholder" class='people-img'>
                 </div>
             </div>
 
@@ -97,3 +138,8 @@ layout: default
 
 
     </div>
+
+
+
+</body>
+</html>
