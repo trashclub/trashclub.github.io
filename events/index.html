@@ -1,61 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+title: My page
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trash Club Test 5:16</title>
-
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="/style/style.css">
-
-    <!--adobe fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/lwy8jjd.css">
-
-</head>
-
-    <body class='body-events'>
+<body class='body-events'>
     <!--CONTAINER-->
     <div class="container">
 
         <!--NAVBAR-->
-        <!--NAVBAR-->
-<div id='navbar' class='row justify-content-between'>
-    <div id='navbar-trashclub' class='navbar-link col-sm'>
-        <a href="/">Trash Club</a>
-    </div>
-
-    <div id='navbar-reading' class='navbar-link col-sm'>
-        <a href="/reading/">Readings</a>
-    </div>
-
-    <div id='navbar-events' class='navbar-link col-sm'>
-        <a href="/events/">Events</a>
-    </div>
-
-    <div id='navbar-projects' class='navbar-link col-sm'>
-        <a href="/projects/">Projects</a>
-    </div>
-
-    <div id='navbar-people' class='navbar-link col-sm'>
-        <a href="/people/">People</a>
-    </div>
-
-    <div id='navbar-resources' class='navbar-link col-sm'>
-        <a href="/resources/">Resources</a>
-    </div>
-
-</div>
+        {% include navbar.html %}
 
 
         <div id='event-div' class='row justify-content-between'>
             <!--LEFT: EVENTS TITLE-->
             <div id='event-title-div' class='col col-md-6'>
-                <div id = 'event-h2-div'>
+                <div id='event-h2-div'>
                     <h2 id='event-h2'>Events</h2>
                 </div>
             </div>
@@ -63,67 +22,38 @@
             <!--RIGHT: EVENTS INFO-->
             <div id='event-week-div' class='col col-md-6'>
                 <div class='week-intro'>
-                    <p>We have designed some ongoing events. The objectives of these events are to encourage (1) ongoing
-                        participation, (2) more sustained engagement, and (3) a lasting impact on both participating
+                    <p>We are an organization supporting scholarship and community-based
+                        projects on waste and waste infrastructure in NYC and beyond. Thus, Trash Club has designed some ongoing
+                        events. The objectives of these events are to encourage ongoing
+                        participation, more sustained engagement, and a lasting impact on both participating
                         individuals and communities.
                     </p>
                 </div>
 
                 <!--WEEK 0-->
-                
+                {% for event in site.events %}
 
                 <div class='week-event'>
                     <!--DATE-->
                     <div>
                         <!--EVENT DATE-->
-                        <div class='event-date'>March 6, 2020</div>
+                        <div class='event-date'>{{ event.date | date: "%B %-d, %Y"}}</div>
                         <!--EVENT TITLE-->
                         <h3 class='event-title'>
-                            Reading Club with Special Guest: Nabil Hassein
+                            {{ event.title }}
                         </h3>
                         <!--READINGS-->
                         <div class='event-readings-div'>
-                            Readings:
                             <div>
-                                <p><a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/">Waste Is Not Matter Out of Place</a><br />
-<a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/">Waste Is Not Matter Out of Place</a><br />
-<a href="https://discardstudies.com/2019/09/09/waste-is-not-matter-out-of-place/">Waste Is Not Matter Out of Place</a></p>
-
+                                {{ event.content }}
                             </div>
                         </div>
                     </div>
                 </div>
 
-                
-
-                <div class='week-event'>
-                    <!--DATE-->
-                    <div>
-                        <!--EVENT DATE-->
-                        <div class='event-date'>May 14, 2020</div>
-                        <!--EVENT TITLE-->
-                        <h3 class='event-title'>
-                            Sims Recycling Center Tour
-                        </h3>
-                        <!--READINGS-->
-                        <div class='event-readings-div'>
-                            Readings:
-                            <div>
-                                <p><a href="https://us02web.zoom.us/j/81593181275?pwd=QWp0d3hsZUx3WTVHQ0lJN3grdW5Xdz09">Zoom Link</a></p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
+                {% endfor %}
 
             </div>
         </div>
 
     </div>
-
-
-
-</body>
-</html>

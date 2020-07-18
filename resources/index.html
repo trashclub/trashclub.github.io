@@ -1,55 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+title: My page
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trash Club Test 5:16</title>
-
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!--Stylesheet-->
-    <link rel="stylesheet" href="/style/style.css">
-
-    <!--adobe fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/lwy8jjd.css">
-
-</head>
-
-    <body class='body-resources'>
+<body class='body-resources'>
     <!--CONTAINER-->
     <div class="container">
 
         <!--NAVBAR-->
-        <!--NAVBAR-->
-<div id='navbar' class='row justify-content-between'>
-    <div id='navbar-trashclub' class='navbar-link col-sm'>
-        <a href="/">Trash Club</a>
-    </div>
-
-    <div id='navbar-reading' class='navbar-link col-sm'>
-        <a href="/reading/">Readings</a>
-    </div>
-
-    <div id='navbar-events' class='navbar-link col-sm'>
-        <a href="/events/">Events</a>
-    </div>
-
-    <div id='navbar-projects' class='navbar-link col-sm'>
-        <a href="/projects/">Projects</a>
-    </div>
-
-    <div id='navbar-people' class='navbar-link col-sm'>
-        <a href="/people/">People</a>
-    </div>
-
-    <div id='navbar-resources' class='navbar-link col-sm'>
-        <a href="/resources/">Resources</a>
-    </div>
-
-</div>
+        {% include navbar.html %}
 
         <!--RESOURCES-->
         <div id='resource-container' class='row justify-content-between'>
@@ -64,77 +23,13 @@
 
             <!--RESOURCES SECTION-->
             <div class='resources-text-div col col-md-5'>
-                
-                <div id='resource-events-div' class='resource-div'>
-                    <h3>Events </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-
+                {% for resource in site.resources %}
+                <div id='{{ resource.div_id }}' class='resource-div'>
+                    <h3>{{ resource.title}} </h3>
+                    {{ resource.content }}
                 </div>
-                
-                <div id='resource-grant-div' class='resource-div'>
-                    <h3>Grants </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-
-                </div>
-                
-                <div id='resource-org-div' class='resource-div'>
-                    <h3>Organizations </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit<br />
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-
-                </div>
-                
+                {% endfor %}
             </div>
-
         </div>
-
+        <script src="/scripts/script.js"></script>
     </div>
-
-
-
-</body>
-</html>
