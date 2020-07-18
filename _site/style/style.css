@@ -33,16 +33,14 @@ h2 {
 }
 
 /* Extra small devices (phones, 700px and down) */
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     h2 {
-        font-size: 4.75em;
+        font-size: 5em;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 700px and up) */
-
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
     h2 {
         font-size: 6.25em;
     }
@@ -110,7 +108,6 @@ a:active {
 }
 
 /* Extra small devices (phones, 700px and down) */
-
 @media only screen and (max-width: 700px) {
     #navbar-resources, #navbar-projects, #navbar-events, #navbar-reading, #navbar-people {
         text-align: left;
@@ -118,7 +115,6 @@ a:active {
 }
 
 /* Small devices (portrait tablets and large phones, 700px and up) */
-
 @media only screen and (min-width: 700px) {
     #navbar-resources {
         text-align: right;
@@ -170,8 +166,6 @@ a:active {
 .body-reading-club {
     background-color: #D9E021;
 }
-
-/*READING PG BLOCK*/
 
 #reading-div {
     margin-top: 0.5vh;
@@ -238,8 +232,6 @@ a:active {
     vertical-align: top;
 }
 
-/*PROJECT BLOCK*/
-
 #project-title-div {
     padding-bottom: 0.5vh;
     border-bottom: 1px solid black;
@@ -251,27 +243,30 @@ a:active {
 }
 
 /* Extra small devices (phones, 700px and down) */
-
 @media only screen and (max-width: 700px) {
     .project-img {
         width: 94vw;
         float: left;
+        padding-bottom: 3%;
+    }
+
+    .project-title{
+        padding-top: 3%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 700px and up) */
-
 @media only screen and (min-width: 700px) {
     .project-img {
         width: 28vw;
         float: right;
-        padding: 1%;
     }
 }
 
 .project-div-full {
     border-bottom: 1px solid black;
 }
+
 
 /*//////////////////////////PEOPLE//////////////////////*/
 
@@ -284,8 +279,6 @@ a:active {
     display: inline-block;
     vertical-align: top;
 }
-
-/*PEOPLE BLOCK*/
 
 #people-title-div {
     padding-bottom: 0.5vh;
@@ -305,22 +298,33 @@ a:active {
     vertical-align: top;
 }
 
-/* Extra small devices (phones, 700px and down) */
+.people-img:hover{
+    cursor:pointer;
+}
 
+#emily-div{
+    border-bottom: none;
+}
+
+
+/* Extra small devices + smaller(phones, 700px and down) */
 @media only screen and (max-width: 700px) {
     .people-img {
-        width: 94vw;
+        width: 96vw;
         float: left;
+        padding-bottom: 3%;
+    }
+
+    .people-name{
+        padding-top: 3%;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 700px and up) */
-
+/* Small devices + above (portrait tablets and large phones, 700px and up) */
 @media only screen and (min-width: 700px) {
     .people-img {
         width: 28vw;
         float: right;
-        padding: 1%;
     }
 }
 
@@ -330,27 +334,27 @@ a:active {
     background-color: #39B54A;
 }
 
-/*RESOURCE BLOCK*/
-
 #resource-title-div {
-    padding-bottom: 0.5vh;
+    padding-top: 0.5vh;
+}
+
+#resource-events-div, #resource-grant-div{
     border-bottom: 1px solid black;
 }
 
-.resource-div {
-    padding-top: 1vh;
+#resource-events-div, #resource-grant-div, #resource-org-div{
+    padding-top: 3%;
+    line-height: 1.75em;
 }
 
-#resource-org-div, #resource-readings-div {
-    border-top: 1px solid black;
-    padding-top: 1vh;
-    margin-top: 8vh;
+#resource-h2-div{
+    width: 100vw;
 }
 
-#resource-div-left {
-    margin-right: 1%;
-}
 
-.resource-p {
-    /* border-top: 1px solid black; */
+/* Small devices + above (portrait tablets and large phones, 700px and up) */
+@media only screen and (max-width: 900px) {
+    .resources-text-div{
+        width: 100%;
+    }
 }
