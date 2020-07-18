@@ -20,7 +20,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 0.9em;
-    line-height: 1.7em;
+    line-height: 1.625em;
     color: black;
 }
 
@@ -33,14 +33,14 @@ h2 {
 }
 
 /* Extra small devices (phones, 700px and down) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
     h2 {
         font-size: 5em;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 700px and up) */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 960px) {
     h2 {
         font-size: 6.25em;
     }
@@ -55,7 +55,7 @@ h3 {
 
 @media only screen and (max-width: 700px) {
     h3 {
-        font-size: 1.7em;
+        font-size: 1.75em;
     }
 }
 
@@ -190,6 +190,25 @@ a:active {
     margin-bottom: 5vh;
 }
 
+#reading-h2-div{
+    width: 100vw;
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media only screen and (max-width: 700px) {
+    #reading-h2-div{
+        width: 100vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 700px and up) */
+@media only screen and (min-width: 700px) {
+    #reading-h2-div{
+        width: 50vw;
+    }
+}
+
+
 /*//////////////////////////EVENTS//////////////////////*/
 
 #event-div {
@@ -233,8 +252,9 @@ a:active {
 }
 
 #project-title-div {
-    padding-bottom: 0.5vh;
+    padding-bottom: 1vh;
     border-bottom: 1px solid black;
+    padding-top: 0.5vh
 }
 
 .project-img {
@@ -281,8 +301,9 @@ a:active {
 }
 
 #people-title-div {
-    padding-bottom: 0.5vh;
+    padding-bottom: 1vh;
     border-bottom: 1px solid black;
+    padding-top:0.5vh;
 }
 
 .people-div-full {
@@ -338,13 +359,13 @@ a:active {
     padding-top: 0.5vh;
 }
 
-#resource-events-div, #resource-grant-div{
+#resource-events-div, #resource-grant-div, #resource-org-div{
     border-bottom: 1px solid black;
 }
 
-#resource-events-div, #resource-grant-div, #resource-org-div{
+#resource-events-div, #resource-grant-div, #resource-org-div,  #resource-readings-div{
     padding-top: 3%;
-    line-height: 1.75em;
+    line-height: 2em;
 }
 
 #resource-h2-div{
@@ -352,9 +373,20 @@ a:active {
 }
 
 
-/* Small devices + above (portrait tablets and large phones, 700px and up) */
-@media only screen and (max-width: 900px) {
+/* Small devices(portrait tablets and large phones, 700px and up) */
+@media only screen and (max-width: 700px) {
     .resources-text-div{
         width: 100%;
+    }
+
+    #resource-h2-div{
+        width: 100vw;
+    }
+}
+
+/* Above small device */
+@media only screen and (min-width: 700px) {
+    #resource-h2-div{
+        width: 50vw;
     }
 }
