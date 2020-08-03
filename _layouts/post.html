@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1><a>{{ page.title | escape }}</a></h1>
+
+      <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span> 
+      <div class="content">
+        {{ content }}
+      </div>
+    
+      <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
