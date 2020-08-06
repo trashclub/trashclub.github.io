@@ -624,13 +624,21 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 @media only screen and (min-width: 768px) {
     .content {
-        width: 75%;
+        width: 80%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
+    .content {
+        width: 70%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
     .content {
         width: 60%;
     }
