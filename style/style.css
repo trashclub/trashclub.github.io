@@ -491,10 +491,12 @@ button:focus {
 
 .body-blog{
     font-family: aktiv-grotesk, sans-serif;
+    padding-bottom: 5%;
 }
 
 .pagination-div{
     padding-left: 3%;
+    font-size: 1em;
 }
 
 #previous_span, #page_number_span, #next_span{
@@ -507,5 +509,5 @@ button:focus {
 }
 
 .content{
-    width: 75%;
+    width: 60%;
 }
