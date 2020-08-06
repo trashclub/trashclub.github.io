@@ -36,14 +36,14 @@ h2 {
     font-weight: 400;
 }
 
-/* Extra small devices (phones, 700px and down) */
+/* Extra small devices (phones, 960px and down) */
 @media only screen and (max-width: 960px) {
     h2 {
         font-size: 5em;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 700px and up) */
+/* Small devices (portrait tablets and large phones,960px and up) */
 @media only screen and (min-width: 960px) {
     h2 {
         font-size: 6.25em;
@@ -57,13 +57,13 @@ h3 {
     font-weight: 400;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
     h3 {
         font-size: 1.75em;
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
     h3 {
         font-size: 2em;
     }
@@ -111,15 +111,15 @@ a:active {
     text-align: right;
 }
 
-/* Extra small devices (phones, 700px and down) */
-@media only screen and (max-width: 700px) {
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
     #navbar-resources, #navbar-projects, #navbar-events, #navbar-reading, #navbar-people,  #navbar-blog  {
         text-align: left;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 700px and up) */
-@media only screen and (min-width: 700px) {
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
     #navbar-resources {
         text-align: right;
     }
@@ -199,15 +199,15 @@ a:active {
     width: 100vw;
 }
 
-/* Extra small devices (phones, 700px and down) */
-@media only screen and (max-width: 700px) {
+/* Extra small devices (phones, 768pxand down) */
+@media only screen and (max-width: 768px) {
     #reading-h2-div{
         width: 100vw;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 700px and up) */
-@media only screen and (min-width: 700px) {
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
     #reading-h2-div{
         width: 50vw;
     }
@@ -267,8 +267,8 @@ a:active {
     vertical-align: top;
 }
 
-/* Extra small devices (phones, 700px and down) */
-@media only screen and (max-width: 700px) {
+/* Extra small devices (phones, 768pxand down) */
+@media only screen and (max-width: 768px) {
     .project-img {
         width: 94vw;
         float: left;
@@ -280,8 +280,8 @@ a:active {
     }
 }
 
-/* Small devices (portrait tablets and large phones, 700px and up) */
-@media only screen and (min-width: 700px) {
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
     .project-img {
         width: 28vw;
         float: right;
@@ -333,8 +333,8 @@ a:active {
 }
 
 
-/* Extra small devices + smaller(phones, 700px and down) */
-@media only screen and (max-width: 700px) {
+/* Extra small devices + smaller(phones, 768pxand down) */
+@media only screen and (max-width: 768px) {
     .people-img {
         width: 96vw;
         float: left;
@@ -346,8 +346,8 @@ a:active {
     }
 }
 
-/* Small devices + above (portrait tablets and large phones, 700px and up) */
-@media only screen and (min-width: 700px) {
+/* Small devices + above (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
     .people-img {
         width: 28vw;
         float: right;
@@ -378,8 +378,8 @@ a:active {
 }
 
 
-/* Small devices(portrait tablets and large phones, 700px and up) */
-@media only screen and (max-width: 700px) {
+/* Small devices(portrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
     .resources-text-div{
         width: 100%;
     }
@@ -390,7 +390,7 @@ a:active {
 }
 
 /* Above small device */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
     #resource-h2-div{
         width: 50vw;
     }
@@ -461,8 +461,8 @@ button:focus {
     padding-right: 0px;
 }
 
-/* Small devices(portrait tablets and large phones, 700px and up) */
-@media only screen and (max-width: 700px) {
+/* Small devices(portrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
     #blog-div{
         margin: 0;
         padding-left: 0px;
@@ -471,7 +471,7 @@ button:focus {
 }
 
 /* Above small device */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
     #blog-div{
         margin: 0;
         padding-left: 0px;
@@ -519,15 +519,15 @@ button:focus {
 }
  */
 
-/* Small devices(portrait tablets and large phones, 700px and up) */
-@media only screen and (max-width: 700px) {
+/* Small devices(portrait tablets and large phones, 768px and up) */
+@media only screen and (max-width: 768px) {
     .content{
         width: 100%;
     }   
 }
 
 /* Above small device */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
     .content{
         width: 70%;
     }
