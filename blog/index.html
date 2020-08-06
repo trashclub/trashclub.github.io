@@ -10,8 +10,8 @@ title: Trash Club - Blog
 
         {% include navbar.html %}
 
-        <div class='blog-div row justify-content-left'>
-            <div class = 'col-md-12'>
+        <div class='blog-container row justify-content-left'>
+            <div id='blog-div' class = 'col-md-12'>
                 {% for post in paginator.posts %}
                 <h1 class='blog-h1'><a href="{{ post.url }}">{{ post.title }}</a></h1>
                 <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
