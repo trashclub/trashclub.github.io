@@ -492,3 +492,14 @@ button:focus {
     font-family: aktiv-grotesk, sans-serif;
 }
 
+.pagination-div{
+
+}
+
+#previous_span, #page_number_span, #next_span{
+    padding-left: 5%;
+}
+
+.row{
+    margin:0;
+}
