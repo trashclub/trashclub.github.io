@@ -94,6 +94,7 @@ a:active {
 .container {
     margin-top: 1.75vh;
     width: 97%;
+    margin-bottom: 3%;
 }
 
 /*//////////////////////////NAVBAR//////////////////////*/
@@ -648,9 +649,8 @@ input:focus, select:focus, textarea:focus, button:focus {
     border: 1px solid black;
     color: black;
     padding: 0.75% 1.65%;
-    font-size: 0.9125em;
+    font-size: 1em;
     font-family: aktiv-grotesk, sans-serif;
-    letter-spacing: 0.25px;
     margin-right: 1%;
     margin-top: 3%;
 }
