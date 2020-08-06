@@ -493,7 +493,7 @@ button:focus {
 }
 
 .pagination-div{
-
+    padding-left: 3%;
 }
 
 #previous_span, #page_number_span, #next_span{
