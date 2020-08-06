@@ -8,10 +8,9 @@ title: Trash Club - Blog
     <!--CONTAINER-->
     <div class="container">
 
-        <!--NAVBAR-->
         {% include navbar.html %}
 
-        <div class='blog-post-div row justify-left-content-left'>
+        <div class='blog-div row justify-content-left'>
             <div class = 'col-md-9'>
                 {% for post in paginator.posts %}
                 <h1 class='blog-h1'><a href="{{ post.url }}">{{ post.title }}</a></h1>
