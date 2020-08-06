@@ -90,7 +90,7 @@ a:active {
 }
 
 .container {
-    margin-top: 1.2vh;
+    margin-top: 1.75vh;
     width: 97%;
 }
 
@@ -497,7 +497,7 @@ button:focus {
 }
 
 #previous_span, #page_number_span, #next_span{
-    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .row{
