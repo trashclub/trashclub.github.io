@@ -440,7 +440,8 @@ button:focus {
     border-top: 1px solid black;
 }
 
-
-.blog-post-div{
+.blog-div{
     margin: 0;
+    padding:0;
 }
+
