@@ -440,7 +440,7 @@ button:focus {
     background-color: #EDE5E2;
 }
 
-.blog-title-div{
+#blog-title-div{
     padding-bottom: 1vh;
     border-bottom: 1px solid black;
     padding-top: 0.5vh;
