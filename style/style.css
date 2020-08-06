@@ -436,6 +436,16 @@ button:focus {
 
 /*////////////////////////// BLOG //////////////////////*/
 
+.body-blog{
+    background-color: #EDE5E2;
+}
+
+.blog-title-div{
+    padding-bottom: 1vh;
+    border-bottom: 1px solid black;
+    padding-top: 0.5vh;
+}
+
 .hr-blog{
     border-top: 1px solid black;
 }
@@ -447,7 +457,26 @@ button:focus {
 
 #blog-div{
     margin: 0;
-    padding: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Small devices(portrait tablets and large phones, 700px and up) */
+@media only screen and (max-width: 700px) {
+    #blog-div{
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/* Above small device */
+@media only screen and (min-width: 700px) {
+    #blog-div{
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .blog-h1{
@@ -457,5 +486,9 @@ button:focus {
     font-size: 2.5em;
     line-height: 1.525em;
     color: black;
+}
+
+.body-blog{
+    font-family: aktiv-grotesk, sans-serif;
 }
 
