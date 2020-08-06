@@ -503,12 +503,6 @@ button:focus {
     padding-right: 5%;
 }
 
-#post-date{
-    text-transform: uppercase;
-    font-size: 0.9125em;
-    letter-spacing: 0.05px;
-}
-
 .row{
     margin-left:0px;
     margin-right:0px;
@@ -536,4 +530,5 @@ button:focus {
     font-family: aktiv-grotesk, sans-serif;
     letter-spacing: 0.25px;
     margin-right: 1%;
+    margin-top: 3%;
 }
