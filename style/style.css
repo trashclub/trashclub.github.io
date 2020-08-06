@@ -590,6 +590,7 @@ input:focus, select:focus, textarea:focus, button:focus {
     line-height: 1.525em;
     color: black;
     text-transform: uppercase;
+    padding-top: 3%
 }
 
 .body-blog {
