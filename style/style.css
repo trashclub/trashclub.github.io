@@ -440,8 +440,22 @@ button:focus {
     border-top: 1px solid black;
 }
 
-.blog-div{
+.blog-container{
     margin: 0;
     padding:0;
+}
+
+#blog-div{
+    margin: 0;
+    padding: 0;
+}
+
+.blog-h1{
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    line-height: 1.525em;
+    color: black;
 }
 
