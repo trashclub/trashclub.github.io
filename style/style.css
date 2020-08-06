@@ -524,16 +524,16 @@ button:focus {
 /* Above small device */
 @media only screen and (min-width: 768px) {
     .content{
-        width: 70%;
+        width: 60%;
     }
 }
 
 .tag-name{
     background-color: black;
     color: white;
-    padding: 1% 2%;
+    padding: 0.75% 1.65%;
     font-size: 0.9125em;
     font-family: aktiv-grotesk, sans-serif;
     letter-spacing: 0.25px;
-    margin-right: 3%;
+    margin-right: 1%;
 }
