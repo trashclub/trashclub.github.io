@@ -505,7 +505,7 @@ button:focus {
 
 #post-date{
     text-transform: uppercase;
-    font-size: 0.925em;
+    font-size: 0.9125em;
     letter-spacing: 0.05px;
 }
 
@@ -513,11 +513,6 @@ button:focus {
     margin-left:0px;
     margin-right:0px;
 }
-
-/* .content{
-    width: 70%;
-}
- */
 
 /* Small devices(portrait tablets and large phones, 768px and up) */
 @media only screen and (max-width: 768px) {
@@ -531,4 +526,14 @@ button:focus {
     .content{
         width: 70%;
     }
+}
+
+.tag-name{
+    background-color: black;
+    color: white;
+    padding: 1% 2%;
+    font-size: 0.9125em;
+    font-family: aktiv-grotesk, sans-serif;
+    letter-spacing: 0.25px;
+    margin-right: 3%;
 }
