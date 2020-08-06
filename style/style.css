@@ -509,5 +509,20 @@ button:focus {
 }
 
 .content{
-    width: 60%;
+    width: 70%;
+}
+
+
+/* Small devices(portrait tablets and large phones, 700px and up) */
+@media only screen and (max-width: 700px) {
+    .content{
+        width: 100%;
+    }   
+}
+
+/* Above small device */
+@media only screen and (min-width: 700px) {
+    .content{
+        width: 70%;
+    }
 }
