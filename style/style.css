@@ -645,8 +645,8 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 .tag-name {
-    background-color: black;
-    color: white;
+    border: 1px solid black;
+    color: black;
     padding: 0.75% 1.65%;
     font-size: 0.9125em;
     font-family: aktiv-grotesk, sans-serif;
