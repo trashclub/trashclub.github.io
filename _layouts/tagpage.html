@@ -12,11 +12,11 @@ layout: default
     <!--BLOG TITLE-->
     <div id='blog-full-container' class='row justify-content-between'>
       <div id='blog-div' class='col col-md-12'>
-        <h2><a>Tag: {{ page.tag }}</a></h2>
+        <h2 class = 'tag-title'><a>Tag: {{ page.tag }}</a></h2>
 
         <ul>
           {% for post in site.tags[page.tag] %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+          <li class = 'tag-posts'><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
             {{ post.description }}
           </li>
           {% endfor %}
