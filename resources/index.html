@@ -15,7 +15,7 @@ layout: default
 
             <!--RESOURCES TITLE-->
             <div id='resource-title-div' class='col col-md-7'>
-                <div class = 'resource-h2-div'>
+                <div class='resource-h2-div'>
                     <h2>Resources</h2>
                 </div>
             </div>
@@ -26,7 +26,7 @@ layout: default
                 {% for resource in site.resources %}
                 <div id='{{ resource.div_id }}' class='resource-div'>
                     <h3>{{ resource.title}} </h3>
-                    {{ resource.content }}
+                        {{ resource.content }}
                 </div>
                 {% endfor %}
             </div>
