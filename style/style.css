@@ -693,5 +693,5 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 .post-date{
-    padding-bottom: 3%;
+    padding: 3% 6%;
 }
