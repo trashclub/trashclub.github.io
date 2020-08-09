@@ -668,6 +668,12 @@ input:focus, select:focus, textarea:focus, button:focus {
     text-decoration: none;
 }
 
-.tag-link {
+.post-title-link:active, .post-title-link:hover{
     text-decoration: none;
+    color: white;
+}
+
+.tag-link, .tag-link:active, .tag-link:hover {
+    text-decoration: none;
+    color: white;
 }
