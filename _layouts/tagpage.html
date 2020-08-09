@@ -1,14 +1,42 @@
 ---
 layout: default
 ---
-<div class="post">
-<h1><a>Tag: {{ page.tag }}</a></h1>
-<ul>
-{% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-    {{ post.description }}
-  </li>
-{% endfor %}
-</ul>
-</div>
-<hr>
+
+<body class='body-blog'>
+
+  <!--CONTAINER-->
+  <div class="container">
+
+    {% include navbar.html %}
+
+    <!--BLOG TITLE-->
+    <div id='blog-full-container' class='row justify-content-between'>
+      <div class='col col-md-12'>
+        <h1 class='blog-h1'><a>Tag: {{ page.tag }}</a></h1>
+
+        <ul>
+          {% for post in site.tags[page.tag] %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+            {{ post.description }}
+          </li>
+          {% endfor %}
+        </ul>
+        
+      </div>
+    </div>
+
+    <!-- <div class="post">
+      <h1><a>Tag: {{ page.tag }}</a></h1>
+      <ul>
+        {% for post in site.tags[page.tag] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+          {{ post.description }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <hr> -->
+
+  </div>
+
+</body>
