@@ -692,11 +692,6 @@ input:focus, select:focus, textarea:focus, button:focus {
     color: white;
 }
 
-/* .post-date{
-    padding: 3% 6%;
-} */
-
-.post-meta{
-    padding: 3% 5%;
+.content{
+    padding: 5% 0%;
 }
-
