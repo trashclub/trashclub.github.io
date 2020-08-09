@@ -558,7 +558,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 /*////////////////////////// BLOG //////////////////////*/
 
 .body-blog {
-    background-color: #F2F2F2;
+    background-color: #DDD;
 }
 
 #blog-title-div {
