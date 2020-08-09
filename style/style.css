@@ -81,17 +81,15 @@ a:hover, a:active {
     text-decoration: underline;
 }
 
-
-.navbar-a{
+.navbar-a {
     color: black;
     text-decoration: none;
 }
 
-.navbar-a:hover, .navbar-a:active{
+.navbar-a:hover, .navbar-a:active {
     color: white;
     text-decoration: none;
 }
-
 
 .all-caps {
     text-transform: uppercase;
@@ -664,4 +662,12 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 .tag-div {
     padding-top: 3%;
+}
+
+.post-title-link {
+    text-decoration: none;
+}
+
+.tag-link {
+    text-decoration: none;
 }
