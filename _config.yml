@@ -5,5 +5,6 @@ collections:
   - readings
   - projects
   - resources
-paginate: 10
+paginate: 5
 paginate_path: "/blog/:num/"
+plugins: [jekyll-paginate]
