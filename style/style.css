@@ -674,6 +674,10 @@ input:focus, select:focus, textarea:focus, button:focus {
     margin-top: 3%;
 }
 
+.tag-name:hover{
+    color: white;
+}
+
 .post-title-link {
     text-decoration: none;
 }
