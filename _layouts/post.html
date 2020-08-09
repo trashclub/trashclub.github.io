@@ -11,14 +11,21 @@ layout: default
 
     <!--BLOG TITLE-->
     <div id='blog-full-container' class='row justify-content-between'>
+      <div id='blog-title-div' class='col col-md-12'>
+        <h2>BLOG</h2>
+      </div>
+    </div>
+
+    <!--TITLE-->
+    <div id='blog-full-container' class='row justify-content-between'>
       <div class='col col-md-12'>
-        <h1 class = 'blog-h1'><a>{{ page.title | escape }}</a></h1>
+        <h1 class='blog-h1'><a>{{ page.title | escape }}</a></h1>
       </div>
     </div>
 
     <!-- <h1><a>{{ page.title | escape }}</a></h1> -->
 
-    <p class="post-meta" class = 'post-date'>{{ page.date | date: "%b %-d, %Y" }}</p>
+    <p class="post-meta" class='post-date'>{{ page.date | date: "%b %-d, %Y" }}</p>
     <div class="content">
       {{ content }}
     </div>
