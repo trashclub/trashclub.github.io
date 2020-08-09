@@ -24,6 +24,7 @@ body {
     color: black;
 }
 
+
 h1 {
     font-family: aktiv-grotesk, sans-serif;
 }
@@ -71,6 +72,7 @@ h3 {
     }
 }
 
+/*/////////// HYPERLINK STYLE /////////// */
 a {
     color: black;
     text-decoration: underline;
@@ -87,6 +89,16 @@ a:hover, a:active {
 }
 
 .navbar-a:hover, .navbar-a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.no-underline-link>a{
+    color: black;
+    text-decoration: none;
+}
+
+.no-underline-link>a:active, .no-underline-link>a:hover{
     color: white;
     text-decoration: none;
 }
@@ -386,6 +398,8 @@ a:hover, a:active {
 #resource-h2-div {
     width: 100vw;
 }
+
+
 
 /* Small devices(portrait tablets and large phones, 768px and up) */
 
