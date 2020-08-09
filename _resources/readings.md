@@ -3,7 +3,7 @@ title: Readings, Journals, Blogs
 div_id: resource-readings-div
 
 ---
-
+{:.no-underline-link}
 [Trash Club are.na](https://www.are.na/itp-trash)  
 [Discard Studies](https://discardstudies.com/)  
 [Waste Dive](https://www.wastedive.com/)  

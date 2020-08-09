@@ -2,7 +2,7 @@
 title: Organizations
 div_id: resource-org-div
 ---
-
+{:.no-underline-link}
 [Big Reuse](https://www.bigreuse.org/)  
 [LES Ecology Center](https://www.lesecologycenter.org/)  
 [Slow Factory Foundation](https://slowfactory.foundation/)  
@@ -14,3 +14,4 @@ div_id: resource-org-div
 [Environmental Advocates NY](https://eany.org/)  
 [Digital Earth](https://www.digitalearth.art/)  
 [Climate Lockdown](https://www.climatelockdown.com/)  
+
