@@ -674,10 +674,6 @@ input:focus, select:focus, textarea:focus, button:focus {
     margin-top: 3%;
 }
 
-.tag-div {
-    padding-top: 3%;
-}
-
 .post-title-link {
     text-decoration: none;
 }
@@ -694,4 +690,14 @@ input:focus, select:focus, textarea:focus, button:focus {
 
 .content{
     padding: 2% 0%;
+}
+
+.tag-title{
+    border-bottom: 1px solid black;
+    padding-bottom: 1%;
+}
+
+.tag-posts {
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
