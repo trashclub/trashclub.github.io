@@ -32,7 +32,8 @@ layout: default
 
                 <!--WEEK 1-->
 
-                {% for reading in site.readings %}
+                {% assign sorted = site.readings | sort: 'date' | reverse %}
+                {% for reading in sorted %}
 
                 <div class='week-reading'>
                     <!--DATE-->
