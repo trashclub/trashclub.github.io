@@ -188,6 +188,18 @@ a:hover, a:active {
     padding: 1.25vh 0 0 0;
 }
 
+::-webkit-input-placeholder { /* Edge */
+    color: black;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: black;
+  }
+  
+  ::placeholder {
+    color: black;
+  }
+
 /*//////////////////////////READING CLUB//////////////////////*/
 
 .body-reading-club {
@@ -220,6 +232,19 @@ a:hover, a:active {
 #reading-h2-div {
     width: 100vw;
 }
+
+#mc_embed_signup input.email{
+    color: black;
+}
+
+#mce-EMAIL{
+    color: black;
+}
+
+input{
+    color: black;
+}
+
 
 /* Extra small devices (phones, 768pxand down) */
 
