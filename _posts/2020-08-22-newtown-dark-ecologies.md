@@ -10,7 +10,7 @@ tags: Dark-Ecologies Newtown-Creek NYC
 This is the first post in a series about lesser known places in NYC that have unusual and strange histories that
 have largely affected their present states. the series is titled: Dark Ecologies of NYC
 
-![](../assets/blog_img/newtown_creek.jpg)
+![](../assets/blog_img/newtown_creek.jpg =336x)
 
 Dark Ecologies of NYC builds on the term “Dark Ecology” coined by the Scholar Timothy Morton. Dark ecology, as described by Morton, is in a sense ecological awareness, which often begins as dark and depressing. That initial darkness eventually yields to the weird and uncanny, allowing for a strange “dark-sweet” sensation to overcome the viewer. The awareness that arrives when the weirdness sets in is both a riddle and a change in mindset - How one becomes accustomed to something strange and yet that strangeness never ceases to become less strange.
 
