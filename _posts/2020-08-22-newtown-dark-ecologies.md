@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dark Ecologies of NYC"
+title:  "Dark Ecologies of NYC - Newtown Creek"
 date:   August 22, 2020
 tags: Dark-Ecologies Newtown-Creek NYC
 ---
