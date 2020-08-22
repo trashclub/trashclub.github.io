@@ -2,8 +2,9 @@
 layout: post
 title:  "Dark Ecologies of NYC"
 date:   August 22, 2020
-tags: "Dark Ecologies" "Newtown creek" "NYC"
+tags: Dark-Ecologies Newtown-Creek NYC
 ---
+
 
 
 This is the first post in a series about lesser known places in NYC that have unusual and strange histories that
@@ -17,22 +18,22 @@ Trash Club wants to highlight the movements and groups built around NYC’s Dark
 Newtown Creek’s own dark ecology is situated within a history of industrialization, pollution, regional cleanup, and subsequent art, research, and community movements in the area.
 
 
-Below are links to specific projects, organizations, and notable people who have documented and worked within Newtown Creek.
+Below are links to specific projects, organizations, and notable people who have documented and worked within Newtown Creek. It is not a complete list but we will work to update it to keep it as expansive as possible!
 
 
 Field Guides & Resources:
-+ Floating Studio for Dark Ecologies: [link] (http://newtowncreekfieldguide.com/)
-+ Hidden Waters Blog: [link] (https://hiddenwatersblog.wordpress.com/tag/mussel-island/)
-+ Newtown Creek Nature Walk: [link] (https://www1.nyc.gov/site/dep/environment/newtown-creek-nature-walk.page)
-+ Hyperallergic: Audio Tour: [link] (https://hyperallergic.com/385283/an-audio-tour-dredges-up-dark-ecologies-of-nycs-polluted-waterways/)
++ Floating Studio for Dark Ecologies: [link](http://newtowncreekfieldguide.com/)
++ Hidden Waters Blog: [link](https://hiddenwatersblog.wordpress.com/tag/mussel-island/)
++ Newtown Creek Nature Walk: [link](https://www1.nyc.gov/site/dep/environment/newtown-creek-nature-walk.page)
++ Hyperallergic: Audio Tour: [link](https://hyperallergic.com/385283/an-audio-tour-dredges-up-dark-ecologies-of-nycs-polluted-waterways/)
 
 Local Groups:
-+ Newtown Creek Alliance: [link] (http://www.newtowncreekalliance.org/)
-+ Newtown Creek Community Action Group: [link] (https://newtowncreekcag.org/about-the-cag/)
-+ Newtown Creek Coalition: [link] (http://newtowncreekcoalition.org/)
-+ Smiling Hogshead Ranch: [link] (http://www.smilinghogsheadranch.org/)
++ Newtown Creek Alliance: [link](http://www.newtowncreekalliance.org/)
++ Newtown Creek Community Action Group: [link](https://newtowncreekcag.org/about-the-cag/)
++ Newtown Creek Coalition: [link](http://newtowncreekcoalition.org/)
++ Smiling Hogshead Ranch: [link](http://www.smilinghogsheadranch.org/)
 
 
 Notable People:
-+ Marina Zurkow: [link] (http://o-matic.com/fsde/newtown1.html)
-+ Timothy Morton: [link] (http://www.changingweathers.net/en/episodes/48/what-is-dark-ecology)
++ Marina Zurkow: [link](http://o-matic.com/fsde/newtown1.html)
++ Timothy Morton: [link](http://www.changingweathers.net/en/episodes/48/what-is-dark-ecology)
