@@ -19,7 +19,7 @@ title: Trash Club - Blog
 
         <!--BLOG TITLE-->
         <div class='blog-container row justify-content-left'>
-            <div id='blog-div' class='col col-md-12'>
+            <div id='blog-div' class='tag-blog-title-div col col-md-12'>
                 {% for post in paginator.posts %}
                 <h1 class='blog-h1'><a href="{{ post.url }}" class='post-title-link'>{{ post.title }}</a></h1>
                 <span id='post-date' class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -55,7 +55,8 @@ title: Trash Club - Blog
             </div>
 
             <div class="pagination col-md-3">
-                <p id='page_number_span' class="page_number "> Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
+                <p id='page_number_span' class="page_number "> Page: {{ paginator.page }} of {{ paginator.total_pages }}
+                </p>
                 {% if paginator.next_page %}
                 <a href="{{ paginator.next_page_path }}" class="next">Next</a>
                 {% else %}
@@ -66,3 +67,6 @@ title: Trash Club - Blog
                 {% endif %}
             </div>
         </div>
+    </div>
+
+</body>
