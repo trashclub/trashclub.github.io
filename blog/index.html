@@ -44,29 +44,30 @@ title: Trash Club - Blog
             </div>
         </div>
         {% endfor %}
+    </div>
 
-        <div class='pagination-div row justify-content-left'>
-            <div class="pagination col-md-3">
-                {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-                {% else %}
-                <p id='previous_span' class="previous">Previous </p>
-                {% endif %}
-            </div>
+    <div class='pagination-div row justify-content-left'>
+        <div class="pagination col-md-3">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+            {% else %}
+            <p id='previous_span' class="previous">Previous </p>
+            {% endif %}
+        </div>
 
-            <div class="pagination col-md-3">
-                <p id='page_number_span' class="page_number "> Page: {{ paginator.page }} of {{ paginator.total_pages }}
-                </p>
-                {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-                {% else %}
-            </div>
+        <div class="pagination col-md-3">
+            <p id='page_number_span' class="page_number "> Page: {{ paginator.page }} of {{ paginator.total_pages }}
+            </p>
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+            {% else %}
+        </div>
 
-            <div class="pagination col-md-3" id='pagination-next'>
-                <p id='next_span' class="next ">Next</p>
-                {% endif %}
-            </div>
+        <div class="pagination col-md-3" id='pagination-next'>
+            <p id='next_span' class="next ">Next</p>
+            {% endif %}
         </div>
     </div>
+
 
 </body>
