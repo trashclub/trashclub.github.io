@@ -4,47 +4,46 @@ layout: default
 ---
 
 <body class='body-reading-club'>
-    <!--CONTAINER-->
-    <div class="container">
+  <!--CONTAINER-->
+  <div class="container">
 
-        <!--NAVBAR-->
-        {% include navbar.html %}
+    <!--NAVBAR-->
+    {% include navbar.html %}
 
-        <div id='reading-div' class='row justify-content-between'>
-            <!--LEFT: ABOUT BLURB-->
-            <div id='reading-title-div' class='col col-md-6'>
-                <div id='reading-h2-div'>
-                    <h2 id='reading-h2'>Reading<br>Club</h2>
-                </div>
-            </div>
-
-            
-
-            <!--RIGHT: READINGS-->
-            <div id='reading-week-div' class='col col-md-6'>
-                <div class='week-intro'>
-                    <p> We meet in room 411 every Friday 4 – 5 pm<br>
-                        Zoom Link:
-                        <a href="https://us02web.zoom.us/j/81593181275?pwd=QWp0d3hsZUx3WTVHQ0lJN3grdW5Xdz09"
-                            target="_blank" rel="noopener noreferrer"> here</a>
-                    </p>
-                </div>
-
-                <!--WEEK 1-->
-
-                {% assign sorted = site.readings | sort: 'date' | reverse %}
-                {% for reading in sorted %}
-
-                <div class='week-reading'>
-                    <!--DATE-->
-                    <div>
-                        <h3 class='reading-date'>{{ reading.date | date: "%B %-d, %Y"}}</h3>
-                        <!--READING 1-->
-                        {{ reading.content }}
-                    </div>
-                </div>
-
-                {% endfor %}
-
-            </div>
+    <div id='reading-div' class='row justify-content-between'>
+      <!--LEFT: ABOUT BLURB-->
+      <div id='reading-title-div' class='col col-md-6'>
+        <div id='reading-h2-div'>
+          <h2 id='reading-h2'>Reading<br>Club</h2>
         </div>
+      </div>
+
+
+
+      <!--RIGHT: READINGS-->
+      <div id='reading-week-div' class='col col-md-6'>
+        <div class='week-intro'>
+          <p> Dates and times of Fall 2020 Reading Group TBD<br>
+            Zoom Link:
+            <a href="https://us02web.zoom.us/j/81593181275?pwd=QWp0d3hsZUx3WTVHQ0lJN3grdW5Xdz09" target="_blank" rel="noopener noreferrer"> here</a>
+          </p>
+        </div>
+
+        <!--WEEK 1-->
+
+        {% assign sorted = site.readings | sort: 'date' | reverse %}
+        {% for reading in sorted %}
+
+        <div class='week-reading'>
+          <!--DATE-->
+          <div>
+            <h3 class='reading-date'>{{ reading.date | date: "%B %-d, %Y"}}</h3>
+            <!--READING 1-->
+            {{ reading.content }}
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
+    </div>
