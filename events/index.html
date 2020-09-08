@@ -4,56 +4,57 @@ layout: default
 ---
 
 <body class='body-events'>
-    <!--CONTAINER-->
-    <div class="container">
+  <!--CONTAINER-->
+  <div class="container">
 
-        <!--NAVBAR-->
-        {% include navbar.html %}
+    <!--NAVBAR-->
+    {% include navbar.html %}
 
 
-        <div id='event-div' class='row justify-content-between'>
-            <!--LEFT: EVENTS TITLE-->
-            <div id='event-title-div' class='col col-md-6'>
-                <div id='event-h2-div'>
-                    <h2 id='event-h2'>Events</h2>
-                </div>
-            </div>
+    <div id='event-div' class='row justify-content-between'>
+      <!--LEFT: EVENTS TITLE-->
+      <div id='event-title-div' class='col col-md-6'>
+        <div id='event-h2-div'>
+          <h2 id='event-h2'>Events</h2>
+        </div>
+      </div>
 
-            <!--RIGHT: EVENTS INFO-->
-            <div id='event-week-div' class='col col-md-6'>
-                <div class='week-intro'>
-                    <p>We are an organization supporting scholarship and community-based
-                        projects on waste and waste infrastructure.
-                    </p>
-                </div>
-
-                <!--WEEK 0-->
-
-                {% assign sorted = site.events | sort: 'date' | reverse %}
-
-                {% for event in sorted %}
-
-                <div class='week-event'>
-                    <!--DATE-->
-                    <div>
-                        <!--EVENT DATE-->
-                        <div class='event-date'>{{ event.date | date: "%B %-d, %Y"}}</div>
-                        <!--EVENT TITLE-->
-                        <h3 class='event-title'>
-                            {{ event.title }}
-                        </h3>
-                        <!--READINGS-->
-                        <div class='event-readings-div'>
-                            <div>
-                                {{ event.content }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {% endfor %}
-
-            </div>
+      <!--RIGHT: EVENTS INFO-->
+      <div id='event-week-div' class='col col-md-6'>
+        <div class='week-intro'>
+          <p>
+            Trash Club's Fall 2020 programming includes a mixture of virtual tours,
+            multiple speaker series, teardowns and more.
+          </p>
         </div>
 
+        <!--WEEK 0-->
+
+        {% assign sorted = site.events | sort: 'date' | reverse %}
+
+        {% for event in sorted %}
+
+        <div class='week-event'>
+          <!--DATE-->
+          <div>
+            <!--EVENT DATE-->
+            <div class='event-date'>{{ event.date | date: "%B %-d, %Y"}}</div>
+            <!--EVENT TITLE-->
+            <h3 class='event-title'>
+              {{ event.title }}
+            </h3>
+            <!--READINGS-->
+            <div class='event-readings-div'>
+              <div>
+                {{ event.content }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {% endfor %}
+
+      </div>
     </div>
+
+  </div>
