@@ -9,7 +9,7 @@ Freshkills Park is already a prime example of Dark Ecology but upon its final co
 
 As Timothy Morton has said “ecological awareness forces us to think and feel at multiple scales, scales that disorient normative concepts.” Looking at Freshkills park as an entanglement of multiple histories existing on more than one scale allows that “dark-sweet” sensation to envelop the viewer.
 
-      "This uncanny sense of existing on more than one scale at once has nothing to do with the pathos of cradling a beautiful blue ball in the void."
+"This uncanny sense of existing on more than one scale at once has nothing to do with the pathos of cradling a beautiful blue ball in the void."
        - Timothy Morton
 
 
