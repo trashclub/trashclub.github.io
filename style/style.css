@@ -729,3 +729,28 @@ input:focus, select:focus, textarea:focus, button:focus {
 .tag-posts {
     padding-top: 1%;
 }
+
+.upcoming {
+            font-size: 1.6em;
+            line-height: 0.675em;
+
+            color: #000000;
+            background-color: #ffffff;
+
+            padding: .4em;
+            border-radius: 10px 10px 10px 10px;
+            font-family: aktiv-grotesk, sans-serif;
+
+        }
+.archive {
+    font-size: 1.6em;
+    line-height: 0.675em;
+
+    color: #ffffff; 
+    background-color: #000000;
+
+    padding: 0.4em;
+    border-radius: 10px 10px 10px 10px;
+    font-family: aktiv-grotesk, sans-serif;
+
+}
