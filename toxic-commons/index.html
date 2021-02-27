@@ -21,7 +21,16 @@ layout: visualization
         <h6>By MORGAN MUELLER & RASHIDA KAMAL</h6></center>
       </div>
     </div>
+
+
     <center><div class="map-main"></div></center>
+
+
+    <div class="states-table">
+      <div id="Alabama">Alabama test</div>
+      <div id="Alaska">Alaska test</div>
+    </div>
+
     <script>
 
       const completed = ["Alabama", "Alaska"]
@@ -62,7 +71,7 @@ layout: visualization
         const path = d3.geoPath().projection(projection)
 
         let customMouseover = (d) => {
-
+          // gonna implement this later
           console.log("do nothing")
 
           // d3.select(this)
@@ -91,6 +100,9 @@ layout: visualization
           .attr("stroke", "#A3A596")
           .attr("stroke-width", 1)
           .on("mouseover", customMouseover)
+          .on("click", ()=>{
+
+          })
 
       }
 
@@ -104,9 +116,5 @@ layout: visualization
         console.log(error)
 
       })
-
-
-
-
     </script>
   </div>
