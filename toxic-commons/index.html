@@ -18,7 +18,7 @@ layout: visualization
         <center>
         <h2>Dispatches <br>from the <br><span style="color:#663F46">Toxic Commons</span></h2>
         <br>
-        <h6>By MORGAN MUELLER & RASHIDA KAMAL</h6></center>
+        <h6>By MORGAN MUELLER and RASHIDA KAMAL</h6></center>
       </div>
     </div>
 
@@ -26,24 +26,30 @@ layout: visualization
     <center><div class="map-main"></div></center>
 
 
-    <div class="states-table">
-      <div id="Alabama">Alabama test</div>
-      <div id="Alaska">Alaska test</div>
-    </div>
-
     <script>
 
       const completed = ["Alabama", "Alaska"]
       const upcoming = ["Arizona", "Arkansas"]
 
-      const palette = {silver: "#A3AF96", orange: "#F65F13", white: "#FDF5E6", eggplant: "#663F46", blue: "85B3C1", lavender: "#C2CDFF"}
+      const palette = {silver: "#A3AF96", orange: "#F65F13", white: "#FDF5E6", eggplant: "#663F46", blue: "85B3C1", lavender: "#C2CDFF", darkWhite: "#e3dccf"}
 
       const texture = textures
                         .lines()
                         .size(12)
                         // .strokeWidth(1)
                         .orientation("3/8")
-                        .stroke(palette.orange);
+                        .stroke(palette.orange)
+
+      const fillSelection = (stateNode) => {
+
+        if (completed.includes(stateNode.properties.name) || completed.indexOf(stateNode.properties.name) !== -1) {
+                  return palette.orange
+              } else if (upcoming.includes(stateNode.properties.name) || upcoming.indexOf(stateNode.properties.name) !== -1){
+                  return texture.url()
+              } else {
+                  return palette.white
+              }  
+      }
 
       const drawMap = (states) => {
 
@@ -53,11 +59,9 @@ layout: visualization
         let proportion = window.innerWidth / 1200
         let paddingProportion = 0.05
         let width = window.innerWidth * .8
-        let height = width * (proportion - paddingProportion*3.5)
+        let height = width * .6
         let mapScale = proportion - 2*paddingProportion
         let leftPadding = width * paddingProportion
-
-        console.log(width)
 
         let svg = d3.select(".map-main")
         .append("svg")
@@ -70,36 +74,47 @@ layout: visualization
         const projection = d3.geoIdentity().scale(mapScale)
         const path = d3.geoPath().projection(projection)
 
-        let customMouseover = (d) => {
-          // gonna implement this later
-          console.log("do nothing")
-
-          // d3.select(this)
-          //   .transition()
-          //   .duration(200)
-          //   .style("fill", "red")
-        }
-
         svg.append("g")
           .attr("transform", "translate("+leftPadding+",10)")
           .selectAll("path")
           .data(topojson.feature(states, states.objects.states).features)
           .join("path")
           .attr("fill", (d) => {
-
-              if (completed.includes(d.properties.name) || completed.indexOf(d.properties.name) !== -1) {
-                  return palette.orange
-              } else if (upcoming.includes(d.properties.name) || upcoming.indexOf(d.properties.name) !== -1){
-                  return texture.url()
-              } else {
-                  return palette.white
-              }  
+  
+              return fillSelection(d)
 
           })
           .attr("d", path)
+          .attr("class", "")
           .attr("stroke", "#A3A596")
           .attr("stroke-width", 1)
-          .on("mouseover", customMouseover)
+          // .attr("xlink:href", function(d){
+
+          //   console.log("#"+d.properties.name)
+          //   return "#"+d.properties.name
+
+          // })
+          .on("mouseover", (event, d) =>{
+
+            d3.select(event.currentTarget)
+            .transition()
+            .duration(200)
+            .style("fill", palette.darkWhite)
+            // .style("stroke", "#333333")
+            // .style("stroke-width", 8)
+
+          })
+          .on("mouseout", (event, d) => {
+
+            d3.select(event.currentTarget)
+            .transition()
+            .duration(100)
+            .style("fill", (d) => {
+              return fillSelection(d)
+            })
+            // .style("stroke", "#A3A596")
+            // .style("stroke-width", 1)   
+          })
           .on("click", ()=>{
 
           })
