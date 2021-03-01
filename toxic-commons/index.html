@@ -99,7 +99,8 @@ layout: visualization
             d3.select(event.currentTarget)
             .transition()
             .duration(200)
-            .style("fill", palette.darkWhite)
+            .style("fill", palette.darkWhite).style("")
+            .style("cursor", "pointer")
             // .style("stroke", "#333333")
             // .style("stroke-width", 8)
 
